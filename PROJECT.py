@@ -1,4 +1,66 @@
+#Kordused
+from math import *
+from re import X
+for x in range(1,11):
+    R=float(input("{0}.R: ".format(x)))
+    if R>0:
+        S=pi*R**2
+    else:
+        S="R peab > kui 0 olema"
+    print("S={0}".format(S))
+x=0
+while True:
+    x+=1
+    R=float(input("{0}.R: ".format(x)))
+    if R>0:
+        S=pi*R**2
+    else:
+        S="R peab > kui 0 olema"
+    print("S={0}".format(S))    
+    if x==10:
+        break
+x=0
+while x<10:
+    x+=1
+    R=float(input("{0}.R: ".format(x)))
+    if R>0:
+        S=pi*R**2
+        x+=1
+        if R<0:
+            x-1
+    else:
+        S="R peab > kui 0 olema"
+    print("S={0}".format(S))    
+    if x==10:
+        break
+#1
+t=0
+for x in range(15):
+    E=float(input("SISESTA E: ".format(x)))
+    if E.is_integer():
+       t+=1
+print(t)
+#2
+summa=0
+A=int(input("Siseta N: "))
+for x in range(1,A+1,1):
+    summa+=x
+print("Summa: {0}".format(summa))
+#3
+p=1
+lause=""
+for x in range(8):
+    G=float(input("{0} samm\nSisesta G: ".format(x+1)))
+    if G>0:
+        p*=G
+        lause=lause+str(G)+"*"
+print(lause[:-1],"=",G)
 
+#4
+x=0
+for x in range(10,1,21):
+    co=x**2
+    print("square of {x} is equal to{co}".format(x))toq
 
 
 
