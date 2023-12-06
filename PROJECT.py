@@ -58,9 +58,49 @@ print(lause[:-1],"=",G)
 
 #4
 x=0
-for x in range(10,1,21):
+for x in range(10,21):
     co=x**2
-    print("square of {x} is equal to{co}".format(x))toq
+    print("square of {x} is equal to{co}".format(x))
+#5
+x=0
+N= int(input("Введите кол-во чисел: "))
+for _ in range(N):
+	number = int(input("Введите число: "))
+	if number < 0:
+		sum_negative+= number
+print("Сумма отрицательных чисел: {sum_negative}")
+#6
+x=0
+N = int(input("Введите количество чисел: "))
+cnegative = 0
+cpositive = 0
+czero = 0
+for x in range(N):
+number = float(input("Введите число: "))
+ if number < 0:
+  count_negative += 1
+   elif number > 0:
+   	count_positive += 1
+   else:
+   	count_zero += 1
+print(f"Количество отрицательных чисел: {cnegative}")
+print(f"Количество положительных чисел: {cpositive}")
+print(f"Количество нулей: {czero}")
+#7
+num=0
+A=int(input("Введите первое число промежутка"))
+B=int(input("Введите последнее число промежутка"))
+К=int(input("Введите значение К"))
+print("Числа, кратные {K}, из промежутка [{A},{B}]:")
+for num in range(A,B+1):
+	if num % K==0:
+		print(num)
+#8
+print("Дюймы/Сантиметры")
+for x in range (1,21):
+	centimeters=x*2.5
+print("{x}{centimeters:.2}")
+#9
 
 
 
